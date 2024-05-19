@@ -56,7 +56,7 @@ func main() {
 	}
 	fmt.Println("acquired lock for", *name)
 	fmt.Println("Do some work in", *name)
-	time.Sleep(1 * time.Minute)
+	time.Sleep(15 * time.Second)
 
 	// Release lock
 	if err := l.Unlock(ctx); err != nil {
